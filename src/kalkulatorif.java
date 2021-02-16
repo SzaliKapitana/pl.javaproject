@@ -8,6 +8,7 @@ public class kalkulatorif {
         int a = scanner.nextInt();
 
         System.out.println("Podaj operator + lub -: ");
+        scanner.nextLine();
         String operator = scanner.nextLine();
 
         System.out.println("Podaj drugą liczbę: ");
