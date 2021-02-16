@@ -22,38 +22,36 @@ public class App {
 
 
         /*int nr = 2;
+
         if(nr == 2){
             System.out.println("Liczba to 2");
           }else if(nr == 3){
             System.out.println("Liczba to 3");
           }else{
             System.out.println("Jakaś inna liczba niż 3 i 2");
-          }*/
+        }*/
+  
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Podaj pierwszą liczbę: ");
+        int a = scanner.nextInt();
 
-      Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj operator + lub -: ");
+        scanner.nextLine();
+        String operator = scanner.nextLine();
 
-      System.out.println("Podaj pierwszą liczbę: ");
-      int a = scanner.nextInt();
+        System.out.println("Podaj drugą liczbę: ");
+        int b = scanner.nextInt();
 
-      System.out.println("Podaj operator + lub -: ");
-      scanner.nextLine();
-      String operator = scanner.nextLine();
-
-      System.out.println("Podaj drugą liczbę: ");
-      int b = scanner.nextInt();
-
-      if (operator.equals("-")){
-          System.out.println("Wynik to: " +(a-b));
-      }
-      else if(operator.equals("+")){
-          System.out.println("Wynik to: " +(a+b));
-      }
-      else{
-          System.out.println("Wpisz odpowiedni operator. Spróbój ponownie.");
-      }
-          
-      scanner.close();
+        if (operator.equals("-")){
+            System.out.println("Wynik to: " +(a-b));
+          }else if(operator.equals("+")){
+            System.out.println("Wynik to: " +(a+b));
+          }else{
+            System.out.println("Wpisz odpowiedni operator. Spróbój ponownie.");
+        }
+            
+        scanner.close();
 
     }
 }

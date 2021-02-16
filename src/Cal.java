@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class kalkulatorif {
+public class Cal {
     public static void main(String[] args) throws Exception{
 
         Scanner scanner = new Scanner(System.in);
