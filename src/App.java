@@ -21,8 +21,7 @@ public class App {
 
 
 
-        Scanner scanner = new Scanner(System.in);
-        int nr = scanner.nextInt();
+        int nr = 2;
         if(nr == 2){
             System.out.println("Liczba to 2");
           }else if(nr == 3){
