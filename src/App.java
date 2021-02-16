@@ -19,17 +19,17 @@ public class App {
         System.out.println("twój wynik to: " + (a+b+c));
         scanner.close();*/
 
-        /*if(nr == 2){
+
+
+        Scanner scanner = new Scanner(System.in);
+        int nr = scanner.nextInt();
+        if(nr == 2){
             System.out.println("Liczba to 2");
           }else if(nr == 3){
             System.out.println("Liczba to 3");
           }else{
             System.out.println("Jakaś inna liczba niż 3 i 2");
-          }*/
-
-
-
-        //komentarz
+          }
 
 
     }
