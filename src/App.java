@@ -27,5 +27,10 @@ public class App {
             System.out.println("Jakaś inna liczba niż 3 i 2");
           }*/
 
+
+
+        //komentarz
+
+
     }
 }
