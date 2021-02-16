@@ -20,7 +20,7 @@ public class kalkulatorif {
                 System.out.println("Wynik to: " +(a+b));
             }
             else{
-                System.out.println("Wpisz odpowiedni operator. Spróbój ponownie.")
+                System.out.println("Wpisz odpowiedni operator. Spróbój ponownie.");
             }
             
         
