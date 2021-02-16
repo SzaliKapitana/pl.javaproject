@@ -16,13 +16,13 @@ public class kalkulatorif {
 
         if (operator == "-"){
             System.out.println("Wynik to: " +(a-b));
-            }
-            else if(operator == "+"){
-                System.out.println("Wynik to: " +(a+b));
-            }
-            else{
-                System.out.println("Wpisz odpowiedni operator. Spróbój ponownie.");
-            }
+        }
+        else if(operator == "+"){
+            System.out.println("Wynik to: " +(a+b));
+        }
+        else{
+            System.out.println("Wpisz odpowiedni operator. Spróbój ponownie.");
+        }
             
         
         scanner.close();
