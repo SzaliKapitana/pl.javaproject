@@ -14,17 +14,14 @@ public class kalkulatorif {
         System.out.println("Podaj drugą liczbę: ");
         int b = scanner.nextInt();
 
-        if (operator == "-"){
+        if (operator.equals("-")){
             System.out.println("Wynik to: " +(a-b));
-        }
-        else if(operator == "+"){
+        }else if(operator.equals("+")){
             System.out.println("Wynik to: " +(a+b));
-        }
-        else{
+        }else{
             System.out.println("Wpisz odpowiedni operator. Spróbój ponownie.");
         }
             
-        
         scanner.close();
 
 
