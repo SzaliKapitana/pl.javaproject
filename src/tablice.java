@@ -1,70 +1,38 @@
 import java.util.Scanner;
 public class tablice {
-    public static void main(String[] args) throws Exception{
-        
+    public static void main(String[] args) throws Exception {  
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Więcej niż jedno zwierzę to: ");
-        String odp = scanner.nextLine();
-
+        
         String[][] dane = {
-            {"stado","klucz","dwa","owca","lama"},
-            {"sztafeta","skok o tyczce", "skoki narciarskie", "sumo", "szachy"}
+          {"Więcej niż jedno zwierzę","stado","klucz","dwa","owca","lama"},
+          {"Sporty na s","sztafeta","skok o tyczce", "skoki narciarskie", "sumo", "szachy"}
         };
-
-
-        if(odp.equals(dane[0][0])){
-            System.out.println("BRZDĘK");
+    
+        
+        int wynik = 0;
+    
+        
+        for(int i = 0; i < dane.length; i++){
+          System.out.println(dane[i][0]); 
+          String odp = scanner.nextLine(); 
+          boolean isAnswerCorrect = false;
+          
+          for(int it = 1; it < dane[i].length; it++){
+            
+            if(dane[i][it].equals(odp)){
+              isAnswerCorrect = true;
+              System.out.println( "BRZDĘK" );
+              wynik += it*10;
             }
-            else if(odp.equals(dane[0][1])){
-                System.out.println("BRZDĘK");
-            }
-            else if(odp.equals(dane[0][2])){
-                System.out.println("BRZDĘK");
-            }
-            else if(odp.equals(dane[0][3])){
-                System.out.println("BRZDĘK");
-             }
-            else if(odp.equals(dane[0][4])){
-                System.out.println("BRZDĘK");
-            }
-            else{
-                System.out.println("X");
-        }
-
-        System.out.println("Sport na literę S: ");
-        String odpS = scanner.nextLine();
-
-        if(odpS.equals(dane[1][0])){
-            System.out.println("BRZDĘK");
-            }
-            else if(odpS.equals(dane[1][1])){
-                System.out.println("BRZDĘK");
-            }
-            else if(odpS.equals(dane[1][2])){
-                System.out.println("BRZDĘK");
-            }
-            else if(odpS.equals(dane[1][3])){
-                System.out.println("BRZDĘK");
-             }
-            else if(odpS.equals(dane[1][4])){
-                System.out.println("BRZDĘK");
-            }
-            else{
-                System.out.println("X");
-        }
-
-        /*for(int i = 0; i < dane.length; i++){
-            System.out.println(dane[i][0]); 
-            for(int it = 0; it < dane[i].length; it++){
-                System.out.println("ODP: "+dane[i][it]);
-            }
-        }*/
-
-
+          }
+          if(!isAnswerCorrect){
+            System.out.println("X");
+          }
+        }      
+        
+        System.out.println("Twój wynik to "+wynik);
         scanner.close();
-
-
+      }
     }
     
-}
+
