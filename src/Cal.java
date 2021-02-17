@@ -21,23 +21,23 @@ public class Cal {
         switch(operator){
             
             case "+":
-            System.out.println("Wynik to: " +(a+b));
+                System.out.println("Wynik to: " +(a+b));
             break;
 
             case "-":
-            System.out.println("Wynik to: " +(a-b));
+                System.out.println("Wynik to: " +(a-b));
             break;
 
             case "*":
-            System.out.println("Wynik to: " +(a*b));
+                System.out.println("Wynik to: " +(a*b));
             break;
 
             case "/":
-            System.out.println("Wynik to "+(a/b)+" i reszty "+(a%b));
+                System.out.println("Wynik to "+(a/b)+" i reszty "+(a%b));
             break;
 
             default:
-            System.out.println("Podałeś zły znak");
+                System.out.println("Podałeś zły znak");
             break;
 
         }
