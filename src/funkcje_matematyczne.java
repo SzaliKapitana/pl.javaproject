@@ -35,5 +35,7 @@ public class funkcje_matematyczne {
 
        scanner.close();
 
+       //powinno dzialac ale ciezko zgadnac
+
     }
 }
