@@ -12,7 +12,7 @@ public class funkcje_matematyczne {
        boolean y = (false); 
 
 
-       while(proba < 6){
+       while(proba < 9){
             System.out.println("Próba: "+proba+" ,podaj liczbę: ");
             int x = scanner.nextInt();
             if(x > randomNr){
