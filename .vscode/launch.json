@@ -44,9 +44,9 @@
         }
         {
             "type": "java",
-            "name": "Launch metody",
+            "name": "Launch Metody",
             "request": "launch",
-            "mainClass": "metody",
+            "mainClass": "Metody",
             "console":"externalTerminal",
             "projectName": "pl.javaproject_6f0395f6"
         }

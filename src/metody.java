@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class metody {
+public class Metody {
     public static void main(String[] args) throws Exception{
         Scanner scanner = new Scanner(System.in);
 
@@ -34,6 +34,8 @@ public class metody {
        }else if(userWoj.equals(woj[4][0])){
             String Lod = woj[4][1];
             return ("Stolica tego województwa to: "+Lod);
+       }else{
+           return "zła stolica";
        }
 
 
