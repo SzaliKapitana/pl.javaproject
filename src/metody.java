@@ -10,33 +10,47 @@ public class Metody {
         scanner.close();
     }
     static String wartosc( String userWoj ){ 
+
+        boolean y = false;
         
         String[][] woj = {
             {"Śląsk" , "Katowice"},
             {"Wielkopolskie" , "Poznań"},
             {"Małopolskie" , "Kraków"},
             {"Mazowieckie" , "Warszawa"},
-            {"Łódzkie" , "Łódź"}
+            {"Łódzkie" , "Łódź"},
+            {"Dolnośląskie" , "Wrocław"},
+            {"Kujawsko Pomorskie" , "Bydgoszcz i Toruń"},
+            {"Lubelskie" , "Lublin"},
+            {"Opolskie" , "Opole"},
+            {"Podkarpackie" , "Rzeszów"},
+            {"Podlaskie" , "Białystok"},
+            {"Pomorskie" , "Gdańsk"},
+            {"świętokrzyskie" , "Kielce"},
+            {"Warmińsko Mazurskie" , "Olsztyn"},
+            {"Zachodniopomorskie" , "Szczecin"}
+
         };
 		
-       if(userWoj.equals(woj[0][0])){
-           String Kat = woj[0][1];
-           return ("Stolica tego województwa to: "+Kat);
-       }else if(userWoj.equals(woj[1][0])){
-            String Poz = woj[1][1];
-            return ("Stolica tego województwa to: "+Poz);
-       }else if(userWoj.equals(woj[2][0])){
-            String Kra = woj[2][1];
-            return ("Stolica tego województwa to: "+Kra);
-       }else if(userWoj.equals(woj[3][0])){
-            String War = woj[3][1];
-            return ("Stolica tego województwa to: "+War);
-       }else if(userWoj.equals(woj[4][0])){
-            String Lod = woj[4][1];
-            return ("Stolica tego województwa to: "+Lod);
-       }else{
-           return "zła stolica";
-       }
+        int x = 0;
+        
+        
+        while (x < woj.length){
+            if(userWoj.equals(woj[x][0])){
+                y = true;
+                break;
+            }
+            x++;
+            
+        }
+
+        if(y){
+            return "Stolicą tego Województwa jest miasto: " +woj[x][1];
+        }else{
+            return "Zła stolica";
+        }
+
+        
 
 
        
