@@ -9,7 +9,7 @@ public class funkcje_matematyczne {
        System.out.println("Zaraz wpiszesz liczbę masz 10 prób by dobrze zgadnąć: ");
 
        int proba = 1;
-       boolean y = (true); 
+       boolean y = (false); 
 
 
        while(proba < 11){
@@ -20,7 +20,7 @@ public class funkcje_matematyczne {
             }else if(x < randomNr){
                 System.out.println("Podałeś zbyt małą liczbę!");
             }else if(x == randomNr){
-                y = false;
+                y = true;
                 break;
             }
 
