@@ -6,13 +6,13 @@ public class funkcje_matematyczne {
         Scanner scanner = new Scanner(System.in);
        int randomNr = (int) (Math.random()*101) +1;
 
-       System.out.println("Zaraz wpiszesz liczbę masz 5 prób by dobrze zgadnąć: ");
+       System.out.println("Zaraz wpiszesz liczbę masz 10 prób by dobrze zgadnąć: ");
 
        int proba = 1;
        boolean y = (false); 
 
 
-       while(proba < 9){
+       while(proba < 11){
             System.out.println("Próba: "+proba+" ,podaj liczbę: ");
             int x = scanner.nextInt();
             if(x > randomNr){
@@ -28,7 +28,7 @@ public class funkcje_matematyczne {
        }
 
        if(y){
-           System.out.println("Udało ci się!");
+           System.out.println("Udało ci się!"); 
        }else{
            System.out.println("Następnym razem ci się uda!");
        }
