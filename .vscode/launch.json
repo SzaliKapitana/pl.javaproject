@@ -42,7 +42,14 @@
             "console":"externalTerminal",
             "projectName": "pl.javaproject_6f0395f6"
         }
-        
+        {
+            "type": "java",
+            "name": "Launch metody",
+            "request": "launch",
+            "mainClass": "metody",
+            "console":"externalTerminal",
+            "projectName": "pl.javaproject_6f0395f6"
+        }
            
     ]
 }
