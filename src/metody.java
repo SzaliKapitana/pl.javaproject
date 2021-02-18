@@ -26,7 +26,7 @@ public class Metody {
             {"Podkarpackie" , "Rzeszów"},
             {"Podlaskie" , "Białystok"},
             {"Pomorskie" , "Gdańsk"},
-            {"świętokrzyskie" , "Kielce"},
+            {"Świętokrzyskie" , "Kielce"},
             {"Warmińsko Mazurskie" , "Olsztyn"},
             {"Zachodniopomorskie" , "Szczecin"}
 
@@ -47,7 +47,7 @@ public class Metody {
         if(y){
             return "Stolicą tego Województwa jest miasto: " +woj[x][1];
         }else{
-            return "Zła stolica";
+            return "Złe Województwo";
         }
 
         
