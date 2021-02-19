@@ -50,6 +50,22 @@
             "console":"externalTerminal",
             "projectName": "pl.javaproject_6f0395f6"
         }
+        {
+            "type": "java",
+            "name": "Launch Konstruktor",
+            "request": "launch",
+            "mainClass": "Konstruktor",
+            "console":"externalTerminal",
+            "projectName": "pl.javaproject_6f0395f6"
+        }
+        {
+            "type": "java",
+            "name": "Launch KonstruktorV2",
+            "request": "launch",
+            "mainClass": "KonstruktorV2",
+            "console":"externalTerminal",
+            "projectName": "pl.javaproject_6f0395f6"
+        }
            
     ]
 }
